@@ -32,7 +32,7 @@ class ResponseCheck extends Component {
                 message: '너무 성급하시군요! 초록색이 된 후에 클릭하세요.',
             })
         } else if (state === 'now') { // 반응 속도 체크
-            this.endTime = new Date();
+            this.endTime = new Date(); 
             this.setState((prevState) => {
                 return{
                     state: 'waiting',
